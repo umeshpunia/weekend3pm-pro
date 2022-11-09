@@ -1,9 +1,11 @@
 <?php
 include_once "includes/db.php";
-
+$msg="";
 if(!isset($_SESSION['email'])){
     header("location:logout.php");
 }
+
+$login_user_email=$_SESSION['email'];
 
 ?>
 <!DOCTYPE html>
